@@ -1,0 +1,15 @@
+/*标题header部分的样式*/
+*{margin:0; padding:0; border:none}
+.titleHeader{width:100%; height:90px; background:#146ab8; font-family:Microsoft YaHei,SimHei;}
+.titleHeader .logo{width:701px; height:90px; background:url(../images/logo.png) no-repeat left; float:left}
+.titleHeader .nav{height:90px; width:413px; float:right}
+.titleHeader .loginInf{height:51px; width:400px; text-align:right; line-height:51px; color:#BCE0EF; font-size:17px; font-weight:bold; padding-right:13px;}
+.titleHeader .button{height:39px; width:385px; margin-right:8px; background:url(../images/button_bg.png) no-repeat; padding-left:20px; }
+.titleHeader .button a{display:inline-block;}
+.titleHeader .button img{padding-top:7px;}
+.titleHeader .button img,.titleHeader .button a{float:left; font-size:16px; color:#FFF; font-weight:bold; line-height:39px;}
+.titleHeader .button a{letter-spacing:1px;}
+.titleHeader .button a:link{ text-decoration:none;}
+.titleHeader .button a:hover,.titleHeader .button a:visited{ text-decoration:none; color:#6FF}
+.titleHeader .icon{padding-right:5px;}
+.titleHeader .fenge{padding-right:15px; padding-left:15px;}

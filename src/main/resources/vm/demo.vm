@@ -1,0 +1,12 @@
+<html>
+<table>
+	<th>ID</th>
+	<th>用户名</th>
+	#foreach($user in $list)
+	<tr>
+		<td>$user.id</td>
+		<td>$user.name</td>
+	</tr>
+	#end
+</table>
+</html>

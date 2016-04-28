@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	    http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		 http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<!-- 打开注解驱动开关 -->
+	<context:annotation-config />
+
+	<!-- 配置文件 -->
+	<bean class="com.zhxjz.common.CustomizedPropertyPlaceholderConfigurer">
+		<property name="locations">
+			<array>
+				<value>classpath:/configs.properties</value>
+			</array>
+		</property>
+	</bean>
+
+	<!-- jsp渲染 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 -->
+	<bean id="multipartResolver" class="com.zhxjz.controller.uEditor.CustomMultipartResolver">
+		<!-- 指定所上传文件的总大小不能超过20M。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->
+		<property name="maxUploadSize" value="20000000" />
+		<property name="excludeUrlPatternList">
+			<list>
+				<value>/uEditor/imageUp.do</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- mvc拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.zhxjz.common.CommonInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.zhxjz.common.LoginInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.zhxjz.common.PermissionInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- mvc 注解 -->
+	<mvc:annotation-driven />
+
+	<!-- 静态资源 -->
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/css/**" location="/css/" />
+	<mvc:resources mapping="/font/**" location="/font/" />
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/installPackage/**" location="/installPackage/" />
+	<mvc:resources mapping="/conf/**" location="/conf/" />
+	<mvc:resources mapping="/files/**" location="/files/" />
+	<mvc:resources mapping="/uEditor/**/*.js" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.html" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.css" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.png" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.gif" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.swf" location="/uEditor/" />
+	<mvc:resources mapping="/uEditor/**/*.exe" location="/uEditor/" />
+	<mvc:resources mapping="/favicon.ico" location="/favicon.ico" />
+
+</beans>

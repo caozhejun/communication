@@ -1,0 +1,152 @@
+/*
+ * 图标样式定义文件
+ * 刘胜兰
+ */
+
+.blank_image {
+    background-image:url( ../images/icon/s.gif ) !important;
+}
+
+/* 公用图标定义 */
+
+.icon-null {
+    background-image:url( ../images/icon/s.gif ) !important;
+}
+.icon-home {
+    background-image:url( ../images/icon/home.png ) !important;
+}
+.icon-grid {
+    background-image:url( ../images/icon/grid.png ) !important;
+}
+.icon-add {
+    background-image:url(../images/icon/add.gif) !important;
+}
+.icon-delete {
+    background-image:url(../images/icon/delete.gif) !important;
+}
+.icon-save {
+    background-image:url(../images/icon/save.png) !important;
+}
+.icon-save2 {
+    background-image:url(../images/icon/save2.png) !important;
+}
+.icon-refresh {
+    background-image:url(../images/icon/refresh.png) !important;
+}
+.icon-find {
+    background-image:url(../images/icon/find.png) !important;
+}
+.icon-query {
+    background-image:url(../images/icon/query.png) !important;
+}
+.icon-plugin {
+    background-image:url(../images/icon/plugin.gif) !important;
+}
+.icon-world {
+    background-image:url(../images/icon/world.png) !important;
+}
+.icon-world-edit {
+    background-image:url(../images/icon/world_edit.png) !important;
+}
+.icon-map {
+    background-image:url(../images/icon/map.png) !important;
+}
+.icon-excel {
+    background-image:url(../images/icon/excel.png) !important;
+}
+.icon-word {
+    background-image:url(../images/icon/word.png) !important;
+}
+.icon-gear {
+    background-image:url(../images/icon/gear.png) !important;
+}
+.icon-gear-go {
+    background-image:url(../images/icon/gear_go.png) !important;
+}
+.icon-gear-dele {
+    background-image:url(../images/icon/gear_dele.png) !important;
+}
+.icon-rs-first {
+    background-image:url(../images/icon/rs_first.png) !important;
+}
+.icon-rs-last {
+    background-image:url(../images/icon/rs_last.png) !important;
+}
+.icon-rs-next {
+    background-image:url(../images/icon/rs_next.png) !important;
+}
+.icon-rs-prev {
+    background-image:url(../images/icon/rs_prev.png) !important;
+}
+.icon-db-dele {
+    background-image:url(../images/icon/db_dele.png) !important;
+}
+.icon-login {
+    background-image:url(../images/icon/login.png) !important;
+}
+.icon-logout {
+    background-image:url(../images/icon/logout.png) !important;
+}
+.icon-page {
+    background-image:url(../images/icon/page.png) !important;
+}
+.icon-page-query {
+    background-image:url(../images/icon/page_query.png) !important;
+}
+.icon-page-attach {
+    background-image:url(../images/icon/page_attach.png) !important;
+}
+.icon-form-edit {
+    background-image:url(../images/icon/form_edit.png) !important;
+}
+.icon-view-detail {
+    background-image:url(../images/icon/view_detail.png) !important;
+}
+.icon-table-key {
+    background-image:url(../images/icon/table_key.png) !important;
+}
+.icon-table-gear {
+    background-image:url(../images/icon/table_gear.png) !important;
+}
+.icon-feed-key {
+    background-image:url(../images/icon/feed_key.png) !important;
+}
+.icon-node {
+    background-image:url( ../images/icon/node.png) !important;  /* 树节点 */
+}
+.icon-flow {
+    background-image:url( ../images/icon/flow.png) !important;  /* 流程图 */
+}
+.icon-tick {
+    background-image:url( ../images/icon/tick.png) !important;  /* 确认 或 流程提交 */
+}
+.icon-cancel {
+    background-image:url( ../images/icon/cancel.png) !important;  /* 取消 或 流程退回 */
+}
+.icon-attach {
+    background-image:url(../images/icon/attach.png) !important;   /* 附件 */
+}
+.icon-clock {
+    background-image:url(../images/icon/clock.png) !important;   /* 时钟 */
+}
+.icon-calendar {
+    background-image:url(../images/icon/calendar.png) !important;   /* 日历 */
+}
+.icon-date {
+    background-image:url(../images/icon/date.png) !important;   /* 日期 */
+}
+.icon-time {
+    background-image:url(../images/icon/time.png) !important;   /* 时间 */
+}
+.icon-check {
+    background-image:url(../images/icon/check.png) !important;   /* 拼写检查 或 流程审核 */
+}
+.icon-star {
+    background-image:url(../images/icon/star.png) !important;   /* 加星标记 */
+}
+.icon-cross {
+    background-image:url( ../images/icon/cross.png) !important;  /* 关闭 */
+}
+.icon-reset {
+    background-image:url( ../images/icon/reset.png) !important;  /* 重置 */
+}
