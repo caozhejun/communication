@@ -34,7 +34,7 @@
 		<json.version>20090211</json.version>
 		<jdom.version>1.1</jdom.version>
 		<mail.version>1.4.4</mail.version>
-		<solr.version>3.6.0</solr.version>
+		<solr.version>8.2.0</solr.version>
 		<xstream.version>1.4.2</xstream.version>
 		<pinyin4j.version>2.5.0</pinyin4j.version>
 		<jxl.version>2.5.7</jxl.version>
