@@ -49,7 +49,7 @@
 		<httpmime.version>4.2.5</httpmime.version>
 		<commons-beanutils.version>1.8.3</commons-beanutils.version>
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-collections.version>3.2</commons-collections.version>
+		<commons-collections.version>3.2.2</commons-collections.version>
 		<commons-codec.version>1.9</commons-codec.version>
 		<commons-fileupload.version>1.2.2</commons-fileupload.version>
 		<commons-net.version>3.2</commons-net.version>
