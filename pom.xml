@@ -17,7 +17,7 @@
 		<velocity-tools.version>2.0</velocity-tools.version>
 		<mysql.version>5.1.6</mysql.version>
 		<oracle.version>10.2.0.4.0</oracle.version>
-		<derby.version>10.11.1.1</derby.version>
+		<derby.version>10.14.2.0</derby.version>
 		<c3p0.version>0.9.1.2</c3p0.version>
 		<junit.version>4.9</junit.version>
 		<slf4j-log4j12.version>1.7.5</slf4j-log4j12.version>
